@@ -112,7 +112,7 @@
     }
 }
   
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 600px) {
     .work__card {
         height: 200px;
     }

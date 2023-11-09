@@ -18,7 +18,7 @@ const Portfolio = () => {
         <span className="work__item" onClick={() => filterItem("Python")}>Python</span>
         <span className="work__item" onClick={() => filterItem("Web")}>Web</span>
         <span className="work__item" onClick={() => filterItem("Java")}>Java</span>
-        <span className="work__item" onClick={() => filterItem("Prochainement")}>Prochainement</span>
+        <span className="work__item" onClick={() => filterItem("C")}>C</span>
       </div>
 
       <div className="work__container grid">

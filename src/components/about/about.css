@@ -4,7 +4,9 @@
     justify-content: center;
     row-gap: 1.875rem;
 }
-
+.about{
+    margin-left: 4rem;
+}
 .about__container img {
     width: 13rem;
     height: 13rem;
@@ -123,11 +125,17 @@
         row-gap: .5rem;
         text-align: center;
     }
+    .about{
+        margin-left: 4rem;
+    }
 }
 
 @media (max-width: 768px) {
     .about__container {
         grid-template-columns: 350px;
+    }
+    .about{
+        margin-left: 4rem;
     }
 }
 

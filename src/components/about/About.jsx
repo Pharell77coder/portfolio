@@ -13,7 +13,7 @@ const About = () => {
           <div className="about__info">
           <p className="about__description">
             Je suis Titi Pharell, étudiant à Issy les moulineaux, France. 
-            Je suis un passionné e  programmation informatique et 
+            Je suis un passionné de programmation informatique et 
             je code depuis 2019.
             J'ai appris python le Sql le html le css et le Javascript, 
             lors de mon cursus scolaire et le Java et le React en autodidacte.</p>

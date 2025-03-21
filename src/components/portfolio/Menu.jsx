@@ -23,8 +23,8 @@ const Menu = [
     link:"https://github.com/Pharell77coder/portfolio"},
     {id: 3,
     image: Work4,
-    title:"E-commerce Jeux vidéo",
-    category:"Astro",
+    title:"E-commerce (épreuve E4)",
+    category:"PHP",
     link:"https://github.com/Pharell77coder/astro-website-projet"},
     {id: 4,
     image: Work5,
@@ -36,6 +36,11 @@ const Menu = [
     title:"Kollision",
     category:"Python",
     link:"https://github.com/Pharell77coder/kollision"},
+    {id: 6,
+    image: Work1,
+    title:"Conexion administrateur",
+    category:"C#",
+    link:"#"}
 ];
 
 export default Menu;

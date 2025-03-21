@@ -19,7 +19,7 @@ const Portfolio = () => {
         <span className="work__item" onClick={() => filterItem("React")}>React JS</span>
         <span className="work__item" onClick={() => filterItem("Java")}>Java</span>
         <span className="work__item" onClick={() => filterItem("Php")}>PHP</span>
-        <span className="work__item" onClick={() => filterItem("Astro")}>Astro</span>
+        <span className="work__item" onClick={() => filterItem("C#")}>C#</span>
       </div>
 
       <div className="work__container grid">

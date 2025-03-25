@@ -25,7 +25,7 @@ const Menu = [
     image: Work4,
     title:"E-commerce (épreuve E4)",
     category:"PHP",
-    link:"https://github.com/Pharell77coder/astro-website-projet"},
+    link:"https://github.com/Pharell77coder/projet_leger"},
     {id: 4,
     image: Work5,
     title:"Jeu de carte - battaille",

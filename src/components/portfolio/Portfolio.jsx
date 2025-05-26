@@ -1,15 +1,20 @@
-import React, {useState} from 'react';
+// Portfolio.jsx
+import React, { useState } from 'react';
 import './portfolio.css';
 import Menu from './Menu';
+import Detail from './Detail';
 
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
+  const [selectedItem, setSelectedItem] = useState(null);
+
   const filterItem = (categoryItem) => {
     const updatedItems = Menu.filter((curElem) => {
       return curElem.category === categoryItem;
     });
     setItems(updatedItems);
   };
+
   return (
     <section className="work container section" id="work">
       <h2 className="section__title">Travail récent</h2>
@@ -18,14 +23,14 @@ const Portfolio = () => {
         <span className="work__item" onClick={() => filterItem("Python")}>Python</span>
         <span className="work__item" onClick={() => filterItem("React")}>React JS</span>
         <span className="work__item" onClick={() => filterItem("Java")}>Java</span>
-        <span className="work__item" onClick={() => filterItem("Php")}>PHP</span>
+        <span className="work__item" onClick={() => filterItem("PHP")}>PHP</span>
         <span className="work__item" onClick={() => filterItem("C#")}>C#</span>
       </div>
 
       <div className="work__container grid">
         {items.map((elem) => {
-          const{ id, image, title, category, link} = elem;
-          return(
+          const { id, image, title, category, link } = elem;
+          return (
             <div className="work__card" key={id}>
               <div className="work__thumbnail">
                 <img src={image} alt="" className="work__img" />
@@ -33,13 +38,21 @@ const Portfolio = () => {
               </div>
               <span className="work__category">{category}</span>
               <h3 className="work__title">{title}</h3>
-              <a href={link} className="work__button">
+              <a onClick={() => setSelectedItem(elem)} className="work__button">
                 <i className="icon-link work__button-icon"></i>
               </a>
             </div>
           )
         })}
       </div>
+
+      {selectedItem && (
+        <Detail 
+          titre={selectedItem.title}
+          contenu={selectedItem.contenu || "Description non disponible"}
+          link={selectedItem.link || "Description non disponible"}
+        />
+      )}
     </section>
   )
 }

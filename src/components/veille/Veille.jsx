@@ -22,7 +22,7 @@ const Veille = () => {
     <article className="veille__item">
       <h3>Python et l’intelligence artificielle (Mars 2024)</h3>
       <p>Les bibliothèques comme LangChain et PyTorch 2.2 facilitent l'intégration des modèles d'IA avancés.</p>
-      <a href="https://python.langchain.com/en/latest/" target="_blank" rel="noopener noreferrer">Lire plus</a>
+      <a href="https://python.langchain.com/docs/introduction/" target="_blank" rel="noopener noreferrer">Lire plus</a>
     </article>
 
     <article className="veille__item">

@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import './portfolio.css';
 import Menu from './Menu';
-import Detail from './Detail';
 
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
@@ -38,7 +37,8 @@ const Portfolio = () => {
               </div>
               <span className="work__category">{category}</span>
               <h3 className="work__title">{title}</h3>
-              <a onClick={() => setSelectedItem(elem)} className="work__button">
+              {/*<a onClick={() => setSelectedItem(elem)} className="work__button">*/}
+              <a href={link} target="_blank" className="work__button">
                 <i className="icon-link work__button-icon"></i>
               </a>
             </div>
@@ -46,13 +46,13 @@ const Portfolio = () => {
         })}
       </div>
 
-      {selectedItem && (
+      {/*selectedItem && (
         <Detail 
           titre={selectedItem.title}
           contenu={selectedItem.contenu || "Description non disponible"}
           link={selectedItem.link || "Description non disponible"}
         />
-      )}
+      )*/}
     </section>
   )
 }

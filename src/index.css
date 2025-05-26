@@ -7,8 +7,8 @@
   --first-color: hsl(187, 89%, 47%);
   --title-color: hsl(244, 24%, 26%);
   --text-color: hsl(244, 16%, 43%);
-  /*--body-color: hsl(258, 60%, 98%);*/
-  --body-color: rgb(163,191,217);
+  --body-color: hsl(258, 60%, 98%);
+  /*--body-color: rgb(163,191,217);*/
   --container-color: #fff;
   
   /* TYPOGRAPHY AND FONT : 1rem = 16 px */

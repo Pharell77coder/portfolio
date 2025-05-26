@@ -1,6 +1,6 @@
 import React from "react";
 import "./testimonials.css";
-import ImagePython from "../../assets/python.jpeg";
+import ImagePython from "../../assets/python.jpg";
 import ImageHTML from "../../assets/html.png";
 import ImageCSS from "../../assets/css.png";
 import ImageJS from "../../assets/js.png";
@@ -11,7 +11,8 @@ import ImageCsharp from "../../assets/csharp.jpeg";
 import ImageReactJS from "../../assets/logo.svg";
 import ImageJava from "../../assets/java.png";
 
-import { Pagination } from "swiper/modules";
+import { Pagination } from 'swiper/modules';
+
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -49,11 +50,11 @@ const data = [
         comment: "",
     },
     {
-        id: 8, image: ImageHTML, title: "HTML", subtitle: "Langages baliser",
+        id: 8, image: ImageHTML, title: "HTML", subtitle: "Langages balisé",
         comment: "",
     },
     {
-        id: 9, image: ImageCSS, title: "CSS", subtitle: "Langages de programmation",
+        id: 9, image: ImageCSS, title: "CSS", subtitle: "Langages de style",
         comment: "",
     },
     {
